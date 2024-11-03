@@ -1,0 +1,25 @@
+input,
+select,
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 0.8125rem 1rem;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  color: var(--text-body);
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input::placeholder {
+  color: var();
+}
+
+input[type="datetime-local"]::-webkit-datetime-edit {
+  color: var(--input-placeholder);
+}

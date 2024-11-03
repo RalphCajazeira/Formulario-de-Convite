@@ -1,0 +1,53 @@
+#app {
+  display: grid;
+  grid-template-columns: 400fr 820fr;
+
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title {
+  gap: 1rem;
+  height: 100vh; /* Subtrai o valor do outline para caber no 100vh */
+  background-image: url(../assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  outline: 1.25rem solid;
+  outline-offset: -1.25rem; /* Move o outline para dentro do elemento */
+  padding: 3.5rem;
+  border-radius: 1.25rem;
+  outline-color: black;
+
+  & img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  & .text-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+
+    & h1 {
+      font: var(--text-logo);
+      color: var(--pink);
+    }
+    & p {
+      font: var(--text-bd-md);
+      color: var(--text-body);
+    }
+  }
+}
+
+.main-container {
+  padding-inline: 8.125rem;
+  padding-top: 5rem;
+
+  & h2 {
+    font: var(--text-md);
+    color: var(--text-heading);
+    text-align: center;
+  }
+}

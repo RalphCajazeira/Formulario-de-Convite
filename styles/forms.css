@@ -1,0 +1,20 @@
+@import url(fields/index.css);
+
+fieldset {
+  border: none;
+  display: grid;
+  gap: 1rem;
+}
+
+legend {
+  font: var(--text-sm);
+  color: var(--text-heading);
+  margin-bottom: 1.625rem;
+
+  & .legend-icon {
+    width: 1.55rem; /* Tamanho do ícone */
+    height: 1.55rem;
+    margin-right: 0.75rem; /* Espaço entre ícone e texto */
+    vertical-align: middle; /* Alinha verticalmente ao centro */
+  }
+}

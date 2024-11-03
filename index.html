@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Convite</title>
+
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <aside>
+        <div class="aside-container">
+          <div class="title flex-col">
+            <img src="assets/Logo.svg" alt="" />
+            <div class="text-logo">
+              <h1>Festivite</h1>
+              <p>Crie um convite digital para o seu evento</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <div class="main-container flex-col">
+          <h2>Crie seu convite</h2>
+
+          <form>
+            <fieldset class="about-event">
+              <legend>
+                <img
+                  class="legend-icon"
+                  src="assets/icons/calendar.svg"
+                  alt=""
+                />
+                Sobre o evento
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input
+                  id="title"
+                  name="title"
+                  type="text"
+                  placeholder="Nome do evento"
+                />
+              </div>
+
+              <div class="flex gap-16">
+                <div class="input-wrapper flex-1">
+                  <label for="start">Início</label>
+                  <input id="start" name="start" type="datetime-local" />
+                </div>
+                <div class="input-wrapper flex-1">
+                  <label for="end">Fim</label>
+                  <input id="end" name="end" type="datetime-local" />
+                </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
