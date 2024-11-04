@@ -37,7 +37,6 @@
   --text-bd-md: 400 1rem var(--font-Body);
   --text-bd-sm: 400 0.875rem var(--font-Body);
 
-  zoom: 60%;
 }
 
 body {

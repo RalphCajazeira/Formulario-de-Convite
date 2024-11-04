@@ -14,11 +14,13 @@
   background-size: cover;
   background-position: center center;
 
-  outline: 1.25rem solid;
-  outline-offset: -1.25rem; /* Move o outline para dentro do elemento */
-  padding: 3.5rem;
+  /* border: 1.25rem solid; */
+  border-left: 1.25rem solid;
+  border-bottom: 1.25rem solid;
   border-radius: 1.25rem;
-  outline-color: black;
+  border-top: 1.25rem solid;
+  padding: 3.5rem;
+  border-color: black;
 
   & img {
     height: 3rem;
@@ -49,6 +51,10 @@ main {
 .main-container {
   padding-inline: 8.125rem;
   padding-top: 5rem;
+
+  border: 1.25rem solid black;
+  padding: 3.5rem;
+  border-radius: 1.25rem;
 
   & h2 {
     font: var(--text-md);
