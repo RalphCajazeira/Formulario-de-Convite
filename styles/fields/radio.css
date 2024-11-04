@@ -1,0 +1,70 @@
+.tipo {
+  color: #c8cdd0;
+}
+
+.radio-group {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  height: 2.65rem;
+
+  & label {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.125rem;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  input[type="radio"]:checked + label {
+    background-color: var(--input-stroke);
+  }
+}
+
+.event-theme .grid-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  & .card {
+    position: relative;
+    padding: 0.25rem 0.25rem 0.5rem;
+    text-align: center;
+    background-color: var(--shape-button);
+    border-radius: 0.5rem;
+
+    .card-label {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
+
+  .card-label.selected {
+    outline: 3px solid var(--brand-light); /* Ajuste com sua cor de destaque */
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+
+  .card-input:checked + .card-label {
+    outline: 3px solid var(--brand-light);
+    outline-offset: 3px;
+    border-radius: 0.5rem;
+  }
+}

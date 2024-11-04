@@ -1,6 +1,7 @@
 input,
 select,
-textarea {
+textarea,
+.radio-group {
   appearance: none;
   width: 100%;
   border-radius: 0.5rem;

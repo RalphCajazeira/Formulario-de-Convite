@@ -15,6 +15,8 @@
   --brand-mid: #3487cf;
   --brand-dark: #1d6fb6;
 
+  --shape-button: #2d3136;
+
   --purple: #b259ff;
   --fuschia: #ff59f9;
   --pink: #ff598b;
@@ -34,6 +36,8 @@
 
   --text-bd-md: 400 1rem var(--font-Body);
   --text-bd-sm: 400 0.875rem var(--font-Body);
+
+  zoom: 60%;
 }
 
 body {
